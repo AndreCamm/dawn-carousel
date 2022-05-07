@@ -2733,7 +2733,7 @@ details-disclosure > details {
 }
 
 .ratio {
-  display: flex;
+  /* display: flex; */
   position: relative;
   align-items: stretch;
 }

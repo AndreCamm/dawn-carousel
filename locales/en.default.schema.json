@@ -570,7 +570,7 @@
           "label": "Description"
         },
         "show_description": {
-          "label": "Show collection description from the admin"
+          "label": "Show description"
         },
         "description_style": {
           "label": "Description style",
@@ -634,9 +634,6 @@
         },
         "show_vendor": {
           "label": "Show vendor"
-        },
-        "show_description": {
-          "label": "Show description"
         },
         "show_rating": {
           "label": "Show product rating",

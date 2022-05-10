@@ -1,8 +1,8 @@
 .card-wrapper {
   color: inherit;
-  height: 100%;
   position: relative;
   text-decoration: none;
+  height: 100%;
 }
 
 .card {
@@ -113,8 +113,8 @@
 
 @media screen and (min-width: 750px) {
   .card__information {
-    padding-bottom: 1.7rem;
-    padding-top: 1.7rem;
+    padding-bottom: 2.4rem;
+    padding-top: 2.4rem;
   }
 }
 
@@ -150,7 +150,7 @@
 
 .card__heading {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1.2rem;
 }
 
 .card__heading:last-child {
@@ -278,7 +278,7 @@
 }
 
 .card-information > * + * {
-  margin-top: 0.5rem;
+  margin-top: 1.2rem;
 }
 
 .card-information {
@@ -291,7 +291,9 @@
 }
 
 .card-information > .price {
-  color: rgb(var(--color-foreground));
+  color: #4D4D4D;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .card-information > .rating {
@@ -301,11 +303,16 @@
 .card-information
   > *:not(.visually-hidden:first-child)
   + *:not(.rating) {
-  margin-top: 0.7rem;
+  margin-top: 1.2rem;
 }
 
 .card-information .caption {
   letter-spacing: 0.07rem;
+}
+.card-information_description{
+  color: #4D4D4D;
+  font-size: 12px;
+  line-height: 18px;
 }
 
 .card-article-info {

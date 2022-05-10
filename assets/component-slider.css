@@ -129,7 +129,6 @@ slider-component.slider-component-full-width {
     position: relative;
     flex-wrap: inherit;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     margin-bottom: 1rem;
@@ -138,7 +137,7 @@ slider-component.slider-component-full-width {
 
   .slider.slider--desktop .slider__slide {
     margin-bottom: 0;
-    padding-top: max(var(--focus-outline-padding), var(--shadow-padding-top));
+    padding-top: 0;
     padding-bottom: max(var(--focus-outline-padding), var(--shadow-padding-bottom));
   }
 
@@ -156,8 +155,8 @@ slider-component.slider-component-full-width {
   }
 
   .slider-component-full-width .slider--desktop .slider__slide:first-child {
-    margin-left: 1.5rem;
-    scroll-margin-left: 1.5rem;
+    margin-left: 0;
+    scroll-margin-left: 0;
   }
 
   .slider-component-full-width .slider--desktop .slider__slide:last-child {
@@ -306,7 +305,13 @@ slider-component.slider-component-full-width {
 .slider-buttons {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 62%;
+  transform: translateY(-100%);
+  width: 100%;
+  pointer-events: none;
+  z-index: 100;
 }
 
 @media screen and (min-width: 990px) {
@@ -332,11 +337,29 @@ slider-component.slider-component-full-width {
   background: transparent;
   border: none;
   cursor: pointer;
-  width: 44px;
-  height: 44px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
+  pointer-events: all;
+  background-color: white;
+  box-shadow: 1px 2px 4px #0000001F;
+  border-radius: 100%;
+}
+
+.slider-button--next {
+  position: absolute;
+  right: 36px;
+  bottom: 0;
+  transform: translateY(-100%);
+}
+
+.slider-button--prev {
+  position: absolute;
+  left: 12px;
+  bottom: 0;
+  transform: translateY(-100%);
 }
 
 .slider-button:not([disabled]):hover {

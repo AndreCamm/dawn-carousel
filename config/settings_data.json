@@ -1,24 +1,24 @@
 {
   "current": {
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#121212",
+    "colors_accent_1": "#111111",
     "gradient_accent_1": "",
-    "colors_accent_2": "#334fb4",
+    "colors_accent_2": "#bc0000",
     "gradient_accent_2": "",
-    "colors_text": "#121212",
-    "colors_outline_button_labels": "#121212",
+    "colors_text": "#111111",
+    "colors_outline_button_labels": "#111111",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
     "colors_background_2": "#f3f3f3",
     "gradient_background_2": "",
-    "type_header_font": "assistant_n4",
+    "type_header_font": "playfair_display_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "open_sans_n4",
     "body_scale": 100,
-    "page_width": 1200,
+    "page_width": 1440,
     "spacing_sections": 0,
-    "spacing_grid_horizontal": 8,
-    "spacing_grid_vertical": 8,
+    "spacing_grid_horizontal": 24,
+    "spacing_grid_vertical": 24,
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
@@ -78,8 +78,8 @@
     "drawer_shadow_horizontal_offset": 0,
     "drawer_shadow_vertical_offset": 4,
     "drawer_shadow_blur": 5,
-    "badge_position": "bottom left",
-    "badge_corner_radius": 40,
+    "badge_position": "top left",
+    "badge_corner_radius": 0,
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
@@ -95,7 +95,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "currency_code_enabled": true,
+    "currency_code_enabled": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -122,6 +122,7 @@
           "logo_width": 90,
           "logo_position": "middle-left",
           "menu": "main-menu",
+          "menu_type_desktop": "dropdown",
           "show_line_separator": true,
           "enable_sticky_header": true,
           "margin_bottom": 0
@@ -183,7 +184,10 @@
           "color_scheme": "background-1"
         }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {

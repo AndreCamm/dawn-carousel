@@ -49,7 +49,7 @@
 }
 
 .collection__title.title-wrapper {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.4rem;
 }
 
 .collection__title .title:not(:only-child) {
@@ -58,11 +58,11 @@
 
 @media screen and (min-width: 990px) {
   .collection__title--desktop-slider .title {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.4rem;
   }
 
   .collection__title.title-wrapper--self-padded-tablet-down {
-    padding: 0 5rem;
+    padding: 0;
   }
 
   .collection slider-component:not(.page-width-desktop) {

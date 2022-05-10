@@ -78,6 +78,12 @@
   --color-button-text: var(--color-base-outline-button-labels);
   --color-button: var(--color-background);
   --alpha-button-background: 1;
+  box-shadow: 1px 1px 0px white, 2px 2px 0px black;
+}
+.button--secondary:hover{
+  color: var(--gradient-background);
+  background: var(--gradient-base-accent-1);
+  box-shadow: 2px 2px 0px white, 3px 3px 0px black;
 }
 
 .color-background-2 .button--secondary,
@@ -381,7 +387,7 @@ h5,
   font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
   font-weight: var(--font-heading-weight);
-  letter-spacing: calc(var(--font-heading-scale) * 0.06rem);
+  letter-spacing: calc(var(--font-heading-scale) * 0.043rem);
   color: rgb(var(--color-foreground));
   line-height: calc(1 + 0.3 / max(1, var(--font-heading-scale)));
   word-break: break-word;
@@ -405,13 +411,13 @@ h1,
 @media only screen and (min-width: 750px) {
   h1,
   .h1 {
-    font-size: calc(var(--font-heading-scale) * 4rem);
+    font-size: calc(var(--font-heading-scale) * 3.6rem);
   }
 }
 
 h2,
 .h2 {
-  font-size: calc(var(--font-heading-scale) * 2rem);
+  font-size: calc(var(--font-heading-scale) * 1.8rem);
 }
 
 @media only screen and (min-width: 750px) {
@@ -681,7 +687,7 @@ details > * {
 }
 
 :root {
-  --duration-short: 100ms;
+  --duration-short: 0.15ms;
   --duration-default: 200ms;
   --duration-long: 500ms;
 }
@@ -997,7 +1003,7 @@ summary::-webkit-details-marker {
 
 @media screen and (min-width: 750px) {
   .grid__item {
-    width: calc(25% - var(--grid-desktop-horizontal-spacing) * 3 / 4);
+    width: calc(25% - var(--grid-desktop-horizontal-spacing));
     max-width: calc(50% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
@@ -1290,13 +1296,14 @@ button.shopify-payment-button__button--unbranded {
   padding: 0 3rem;
   cursor: pointer;
   font: inherit;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: rgb(var(--color-button-text));
-  transition: box-shadow var(--duration-short) ease;
+  transition: var(--duration-short) ease-out;
   -webkit-appearance: none;
   appearance: none;
   background-color: rgba(var(--color-button), var(--alpha-button-background));
+  font-weight: 600;
 }
 
 .button:before,
@@ -2733,7 +2740,7 @@ details-disclosure > details {
 }
 
 .ratio {
-  /* display: flex; */
+  display: flex;
   position: relative;
   align-items: stretch;
 }
